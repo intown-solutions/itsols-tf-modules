@@ -29,12 +29,7 @@ resource "aws_dynamodb_table" "table" {
   }
 
   attribute {
-    name = "hk"
-    type = "S"
-  }
-
-  attribute {
-    name = "rk"
+    name = "LockID"
     type = "S"
   }
 
