@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 module "terraform_s3_backend" {
-  source = "github.com/intown-solutions/itsols-tf-modules/modules/tf-s3-backend"
+  source = "github.com/intown-solutions/itsols-tf-modules/tree/master/modules/tf-s3-backend"
 
   bucket_name = "bucket-name"
   table_name = "TableName"
