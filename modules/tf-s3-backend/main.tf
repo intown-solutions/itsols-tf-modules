@@ -19,8 +19,7 @@ resource "aws_s3_bucket" "bucket" {
 
 resource "aws_dynamodb_table" "table" {
   name = var.table_name
-  hash_key = "hk"
-  range_key = "rk"
+  hash_key = "LockID"
   billing_mode = var.table_billing_mode
   write_capacity = var.table_write_capacity
   read_capacity = var.table_read_capacity
